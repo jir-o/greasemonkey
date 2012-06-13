@@ -2,7 +2,7 @@
 // @name           joyportAutoLogin
 // @namespace      http://twitter.com/jir_o
 // @description    AutoLogin for joyport
-// @include        https://joyport.inf.in.shizuoka.ac.jp/
+// @include        https://joyport.inf.in.shizuoka.ac.jp/*
 // ==/UserScript==
 
 
@@ -22,19 +22,19 @@
 
 
 
-(function() {
-    document.forms.login_form_4858.elements.login_id.value=GM_getValue("joyport_id");
-    document.forms.login_form_4858.elements.password.value=GM_getValue("joyport_pass");
-    document.forms.login_form_4858.submit();
-})();
-
-
-//for private pages
 (function(){
     document.forms.login_form_0.elements.login_id.value=GM_getValue("joyport_id");
     document.forms.login_form_0.elements.password.value=GM_getValue("joyport_pass");
     document.forms.login_form_0.submit();
 })();
 
+
+//プライベートページに直接飛んだときに表示されるログインフォームにも自動入力させる
+
+(function() {
+    document.forms.login_form_4858.elements.login_id.value=GM_getValue("joyport_id");
+    document.forms.login_form_4858.elements.password.value=GM_getValue("joyport_pass");
+    document.forms.login_form_4858.submit();
+})();
 
 
