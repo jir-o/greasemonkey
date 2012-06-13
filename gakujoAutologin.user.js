@@ -8,14 +8,14 @@
 
 
 (function inputID(){
-	if(GM_getValue("gakuban") == undefined){
+	if(typeof GM_getValue("gakuban") == undefined){
 		hoge1 = prompt("input your id(ex.70XXXXXXX)","");
 		GM_setValue("gakuban", hoge1);
 	}
 })();
 
 (function inputPASS(){
-		if(GM_getValue("pass") == undefined){
+		if(typeof GM_getValue("pass") == undefined){
 		hoge2 = prompt("input your password","");
 		GM_setValue("pass", hoge2);
 		}
