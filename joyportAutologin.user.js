@@ -29,7 +29,7 @@
 })();
 
 
-//個別ページに飛んだ場合にもログイン(要ログインURL時)
+//for private pages
 (function(){
     document.forms.login_form_0.elements.login_id.value=GM_getValue("joyport_id");
     document.forms.login_form_0.elements.password.value=GM_getValue("joyport_pass");
