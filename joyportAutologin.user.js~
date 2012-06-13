@@ -8,7 +8,7 @@
 
 (function inputID(){
 	if(GM_getValue("joyport_id") == undefined){
-		hoge1 = prompt("input your id(ex.ia10XXX)","");
+		hoge1 = prompt("input your id(ex.70XXXXXXX)","");
 		GM_setValue("joyport_id", hoge1);
 	}
 })();
