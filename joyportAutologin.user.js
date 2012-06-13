@@ -29,9 +29,12 @@
 })();
 
 
-//限定公開ページから遷移するログインフォームにも自動入力させる
+//個別ページに飛んだ場合にもログイン(要ログインURL時)
 (function(){
     document.forms.login_form_0.elements.login_id.value=GM_getValue("joyport_id");
     document.forms.login_form_0.elements.password.value=GM_getValue("joyport_pass");
     document.forms.login_form_0.submit();
 })();
+
+
+
