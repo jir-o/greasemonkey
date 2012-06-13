@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name           gakujoAutoLogin
+// @name           joyportAutoLogin
 // @namespace      http://twitter.com/jir_o
 // @description    AutoLogin for joyport
 // @include        https://joyport.inf.in.shizuoka.ac.jp/
